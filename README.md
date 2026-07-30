@@ -1,4 +1,4 @@
-# PropertyGraphSwarm 🕸️🤖
+# PropertyGraphSwarm 
 
 A lightweight, local-first Python framework for generating, parsing, executing, and compiling **agentic property graphs**. 
 
@@ -6,19 +6,19 @@ A lightweight, local-first Python framework for generating, parsing, executing, 
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-- 🧠 **Local LLM Graph Generation**: Turns natural language prompts into validated JSON property graphs using local models (e.g., DeepSeek via Ollama) with zero cloud dependencies or API keys.
-- 🛠️ **Robust Self-Correction**: Includes automatic schema validation and auto-repair prompting if LLM output fails initial parsing.
-- ⚡ **Ollama Lifecycle Management**: Automatically checks, selects from installed models, and can autostart `ollama serve` on demand.
-- 🎭 **Agentic Node Behaviors**: Node-level behavioral abstraction layer using polymorphic `NodeAgent` classes registered via decorators (`@register_agent`).
-- 🐍 **Graph-to-Code Compilation**: Compiles JSON property graphs into strongly-typed Python dataclasses with explicit, relation-based edge methods (`contains()`, `creates()`, `requires()`).
-- 🚀 **Graph Orchestration & Traversal**: `GraphExecutor` automatically discovers entry points (root nodes) and drives execution order through direct interactions and relation handling (`handle_relation`).
-- 📦 **Zero External Python Dependencies**: Built entirely with standard library Python (`dataclasses`, `urllib`, `json`, `argparse`, etc.).
+-  **Local LLM Graph Generation**: Turns natural language prompts into validated JSON property graphs using local models (e.g., DeepSeek via Ollama) with zero cloud dependencies or API keys.
+-  **Robust Self-Correction**: Includes automatic schema validation and auto-repair prompting if LLM output fails initial parsing.
+-  **Ollama Lifecycle Management**: Automatically checks, selects from installed models, and can autostart `ollama serve` on demand.
+-  **Agentic Node Behaviors**: Node-level behavioral abstraction layer using polymorphic `NodeAgent` classes registered via decorators (`@register_agent`).
+-  **Graph-to-Code Compilation**: Compiles JSON property graphs into strongly-typed Python dataclasses with explicit, relation-based edge methods (`contains()`, `creates()`, `requires()`).
+-  **Graph Orchestration & Traversal**: `GraphExecutor` automatically discovers entry points (root nodes) and drives execution order through direct interactions and relation handling (`handle_relation`).
+-  **Zero External Python Dependencies**: Built entirely with standard library Python (`dataclasses`, `urllib`, `json`, `argparse`, etc.).
 
 ---
 
-## 🏗️ Architecture & Workflow
+##  Architecture & Workflow
 
 ```mermaid
 flowchart TD
@@ -41,7 +41,7 @@ flowchart TD
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 | File | Description |
 | :--- | :--- |
@@ -52,7 +52,7 @@ flowchart TD
 
 ---
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - **Python**: Version 3.8+ (No standard third-party libraries required).
 - **Ollama** (for graph generation): Installed and running locally.
@@ -64,7 +64,7 @@ flowchart TD
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Generate a Property Graph from Prompt
 
@@ -122,7 +122,7 @@ python executor.py path/to/property_graph.json
 
 ---
 
-## 📖 Detailed Example: Architectural House Blueprint
+##  Detailed Example: Architectural House Blueprint
 
 This end-to-end example demonstrates how a **House Blueprint requirement** is represented as a structured JSON graph (`property_graph_1785409993.json`) and compiled into executable, strongly-typed Python code.
 
@@ -349,7 +349,7 @@ if __name__ == "__main__":
 
 ---
 
-## 🎨 Extending Behaviors (`agents.py`)
+##  Extending Behaviors (`agents.py`)
 
 You can easily define custom behaviors for any node type by subclassing `NodeAgent` and decorating it with `@register_agent`:
 
@@ -373,7 +373,7 @@ class SceneAgent(NodeAgent):
 
 ---
 
-## 📄 Property Graph JSON Schema
+##  Property Graph JSON Schema
 
 Generated JSON property graphs follow this strict schema:
 
